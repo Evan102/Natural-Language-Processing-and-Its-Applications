@@ -1,4 +1,4 @@
-# ChatGPT generate FAQ for an introduction of a paaer 
+# Connect ChatGPT to Line chatbot
 
 ## 1. Create your own LINE message API account
 https://developers.line.biz/en/
