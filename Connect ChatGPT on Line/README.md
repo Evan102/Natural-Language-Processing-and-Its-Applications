@@ -17,6 +17,7 @@ Command on the terminal: "ngrok http 5002", and keep the terminal on.
 After step 3, you will see an address which is "https:XXX.ngrok-free.app" behind the line  "Forwarding".
 
 Please copy "https:XXX.ngrok-free.app" and paste on LINE Webhook URL. 
+
 ![plot](Line Developers - Webhook URL.png)
 
 ## 5. Run ChatGPT on Line bot
