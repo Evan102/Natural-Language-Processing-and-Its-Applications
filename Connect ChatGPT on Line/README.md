@@ -18,8 +18,6 @@ After step 3, you will see an address which is "https:XXX.ngrok-free.app" behind
 
 Please copy "https:XXX.ngrok-free.app" and paste on LINE Webhook URL. 
 
-![plot](https://github.com/Evan102/Natural-Language-Processing-and-Its-Applications/blob/main/Connect%20ChatGPT%20on%20Line/Line%20Developers%20-%20Webhook%20URL.png)
-
 <img src="https://github.com/Evan102/Natural-Language-Processing-and-Its-Applications/blob/main/Connect%20ChatGPT%20on%20Line/Line%20Developers%20-%20Webhook%20URL.png"  width="60%" height="30%">
 
 ## 5. Run ChatGPT on Line bot
