@@ -22,8 +22,8 @@ Please copy "https:XXX.ngrok-free.app" and paste on LINE Webhook URL.
 
 ## 5. Run ChatGPT on Line bot
 Remember to update your own OpenAI API key, LINE chatbot Channel secret, and LINE chatbot Channel access token in ChatGPTonLINE.py.
-<img src="https://github.com/Evan102/Natural-Language-Processing-and-Its-Applications/blob/main/Connect%20ChatGPT%20on%20Line/Line%20Developers%20-%20Channel%20secret.png"  width="60%" height="30%">
-<img src="https://github.com/Evan102/Natural-Language-Processing-and-Its-Applications/blob/main/Connect%20ChatGPT%20on%20Line/Line%20Developers%20-%20Channel%20access%20token.png"  width="60%" height="30%">
+<img src="https://github.com/Evan102/Natural-Language-Processing-and-Its-Applications/blob/main/Connect%20ChatGPT%20on%20Line/Line%20Developers%20-%20Channel%20secret.png"  width="100%" height="60%">
+<img src="https://github.com/Evan102/Natural-Language-Processing-and-Its-Applications/blob/main/Connect%20ChatGPT%20on%20Line/Line%20Developers%20-%20Channel%20access%20token.png"  width="100%" height="60%">
 
 Open another terminal and command: "python ChatGPTonLINE.py", and keep the terminal on.
 
