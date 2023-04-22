@@ -8,15 +8,20 @@ reference: https://ithelp.ithome.com.tw/articles/10192928
 ## 2. Download ngrok to support "https"
 https://ngrok.com/download
 
-## 3. Download ngrok to support "https"
-https://ngrok.com/download
+## 3. Run ngrok 
+Open a terminal and cd to the directory where you put ngrok.exe. 
 
-# Data for generating FAQ:
-paper.csv
+Command on the terminal: "ngrok http 5002", and keep the terminal on.
 
-# FAQ result saving file:
-paper_qa.csv
+## 4. Copy an address to LINE Webhook URL 
+After step 3, you will see an address which is "https:XXX.ngrok-free.app" behind the line  "Forwarding".
 
-# files for analyzing the result:
-result_analysis.docx
-result_analysis.pdf
+Please copy "https:XXX.ngrok-free.app" and paste on LINE Webhook URL. 
+
+## 5. Run ChatGPT on Line bot
+Remember to update your own OpenAI API key, Line bot Channel secret, and Line bot Channel access token in ChatGPTonLINE.py.
+
+Open another terminal and command: "python ChatGPTonLINE.py", and keep the terminal on.
+
+After you run "ChatGPTonLINE.py", you can verify if your Webhook URL is successful and test your line bot.
+
