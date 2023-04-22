@@ -37,12 +37,11 @@ openai.api_key = 'Type your API key here'
 
 # get channel_secret and channel_access_token from your environment variable 
 # Update you 'LINE_CHANNEL_SECRET' & 'LINE_CHANNEL_ACCESS_TOKEN'
-# You can find it in Linebot "Basic settings" - "Channel secret"
 
-# You can find it in your Linebot settings: "Basic settings" - "Channel secret"
+# You can find it in your Line developers Line chatbot settings: "Basic settings" - "Channel secret"
 channel_secret = os.getenv('LINE_CHANNEL_SECRET', 'Type your Linebot Channel secret here')
 
-# You can find it in your Linebot settings: "Messaging API" - "Channel access token"
+# You can find it in your Line developers Line chatbot settings: "Messaging API" - "Channel access token"
 channel_access_token = os.getenv('LINE_CHANNEL_ACCESS_TOKEN', 'Type your Linebot Channel access token here')
 
 if channel_secret is None:
