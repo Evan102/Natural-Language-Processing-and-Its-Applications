@@ -1,4 +1,4 @@
-# Connect ChatGPT to Line chatbot
+# Connect ChatGPT to LINE chatbot
 
 ## 1. Create your own LINE message API account
 https://developers.line.biz/en/
@@ -17,12 +17,12 @@ Command on the terminal: "ngrok http 5002", and keep the terminal on.
 After step 3, you will see an address which is "https:XXX.ngrok-free.app" behind the line  "Forwarding".
 
 Please copy "https:XXX.ngrok-free.app" and paste on LINE Webhook URL. 
-![plot](Line Developers - Webhook URL.PNG)
+![plot](Line Developers - Webhook URL.png)
 
 ## 5. Run ChatGPT on Line bot
-Remember to update your own OpenAI API key, Line bot Channel secret, and Line bot Channel access token in ChatGPTonLINE.py.
+Remember to update your own OpenAI API key, LINE chatbot Channel secret, and LINE chatbot Channel access token in ChatGPTonLINE.py.
 
 Open another terminal and command: "python ChatGPTonLINE.py", and keep the terminal on.
 
-After you run "ChatGPTonLINE.py", you can verify if your Webhook URL is successful and test your line bot.
+After you run "ChatGPTonLINE.py", you can verify if your Webhook URL is successful and test your LINE chatbot.
 
