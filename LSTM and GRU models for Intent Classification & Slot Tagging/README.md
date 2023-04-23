@@ -32,16 +32,16 @@ train_slot.py
 test_intent.py  
 test_slot.py
 
-# model files for LSTM & GRU: 
+# Model files for LSTM & GRU: 
 
 intentmodel.py  
 slotmodel.py
 
-# other files for training and prdiction process:
+# Other files for training and prdiction process:
 
 dataset.py  
 utils.py
 
-# pdf report:
+# PDF report for model training analysis:
 
 report.pdf
