@@ -41,7 +41,7 @@ In "train_intent.py", you can define your own json format dataset path in "--tra
 # Other files for training and prdiction process:
 
 dataset.py(used in train_ContextSelection.py, test_ContextSelection.py, train_intent.py and train_slot.py)  
-utils_qa.py(used in train_run_qa_no_trainer.py and test_run_qa_no_trainer.py)
+utils_qa.py(used in train_QuestionAnswering.py and test_QuestionAnswering.py)
 
 # Model prediction files for reference
 In the directory "reproducefiles"  
