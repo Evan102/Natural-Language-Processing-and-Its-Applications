@@ -5,7 +5,7 @@
 ## output: news title
 榜首進台大醫科卻休學 、27歲拿到法國天文博士 李悅寧跌破眾人眼鏡返台任教
 
-# Download data link:
+# Download dataset link:
 https://drive.google.com/file/d/1GRRD9vjy0JxddqO6--EbfPHx71MB4dHQ/view?usp=sharing
 
 # If you want to train model use:
