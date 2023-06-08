@@ -57,7 +57,8 @@ from pyecharts import options as opts
 from pyecharts.charts import Graph
 
 
-os.environ["OPENAI_API_KEY"] = "Your API Key"
+# OPENAI_API_KEY settings:
+os.environ["OPENAI_API_KEY"] = "Your API KEY"
 
 # OpenAIChat
 from langchain.chat_models import ChatOpenAI
@@ -66,37 +67,43 @@ from langchain.chat_models import ChatOpenAI
 from langchain.llms import OpenAI
 from langchain.indexes import GraphIndexCreator
 
-# index_creator = GraphIndexCreator(llm=OpenAI(temperature=0)) # text-davinci-003
+index_creator = GraphIndexCreator(llm=OpenAI(temperature=0)) # text-davinci-003
 
-index_creator = GraphIndexCreator(llm=ChatOpenAI(model_name="gpt-3.5-turbo"))
+# index_creator = GraphIndexCreator(llm=ChatOpenAI(model_name="gpt-3.5-turbo"))
 
 
 # Other text: 'Microsoft Invests $10 Billion in ChatGPT Maker OpenAI.'
 separate_text='吳郭魚屬於慈鯛科，原產於非洲。當初由吳、郭兩位先生引進台灣，後來就以他們的姓命名。吳郭魚屬於雜食性魚類，性情兇猛，具攻擊性，耐汙染、成長快、繁殖力強，具有護卵及小魚的習性，加上體型比原生種魚類來得大，因此他們在短暫適應環境後就迅速建立族群，破壞了原本河川的生態系統。'
-graph = index_creator.from_text(separate_text)
-print(graph.get_triples())
 
-# Separate the result
+graph = index_creator.from_text(separate_text)
+switched_graph = [(item[0], item[2], item[1]) for item in graph.get_triples()]
+print('（entity1, relation, entity2）:')
+print(switched_graph)
+
+# create knowledge graph
 nodes = []
 links = []
 for element in graph.get_triples():
-    if {'name':element[0]} in nodes:
-        if {'name':element[1]} in nodes:
-            continue
-        else:
-            nodes.append({'name':element[1]})
-    else:
-        nodes.append({'name':element[0]})
-        if {'name':element[1]} in nodes:
-            continue
-        else:
-            nodes.append({'name':element[1]})
+    
+    nodes.append({'name':element[1]})
+    nodes.append({'name':element[0]})
             
     links.append({'source': element[0], 'target': element[1], 'value': element[2]})
     
+# select the unique item in nodes
+unique_nodes = []
+seen_names = set()
+for item in nodes:
+    name = item['name']
+    if name not in seen_names:
+        unique_nodes.append(item)
+        seen_names.add(name)
+print("Unique nodes:")
+print(unique_nodes)
+    
 # Create the chart
 graph = Graph()
-graph.add("", nodes, links, repulsion=8000)
+graph.add("", unique_nodes, links, repulsion=8000)
 
 # Set the global options for the chart
 graph.set_global_opts(title_opts=opts.TitleOpts(title="Knowledge Graph"))
