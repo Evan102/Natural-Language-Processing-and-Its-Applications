@@ -72,7 +72,7 @@ index_creator = GraphIndexCreator(llm=OpenAI(temperature=0)) # text-davinci-003
 # index_creator = GraphIndexCreator(llm=ChatOpenAI(model_name="gpt-3.5-turbo"))
 
 
-# Other text: 'Microsoft Invests $10 Billion in ChatGPT Maker OpenAI.'
+# Enter other text, such as: 'Microsoft Invests $10 Billion in ChatGPT Maker OpenAI.'
 separate_text='吳郭魚屬於慈鯛科，原產於非洲。當初由吳、郭兩位先生引進台灣，後來就以他們的姓命名。吳郭魚屬於雜食性魚類，性情兇猛，具攻擊性，耐汙染、成長快、繁殖力強，具有護卵及小魚的習性，加上體型比原生種魚類來得大，因此他們在短暫適應環境後就迅速建立族群，破壞了原本河川的生態系統。'
 
 graph = index_creator.from_text(separate_text)
