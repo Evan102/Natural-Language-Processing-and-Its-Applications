@@ -5,10 +5,10 @@
 python knowledge_graph_by_LLM.py
 
 ## My example:
-separate_text=
-Solar energy plays a critical role in achieving net-zero emissions goals. Accurately predicting long-term solar power potential is essential for identifying optimal locations for solar power deployment. 
+separate_text=  
+"Solar energy plays a critical role in achieving net-zero emissions goals. Accurately predicting long-term solar power potential is essential for identifying optimal locations for solar power deployment. 
 This is however a challenging task since the significant uncertainty resulting from varying weather conditions and geographical locations on solar power output. 
-There is therefore an urgent need to develop reliable prediction models to facilitate successful solar power deployment. This paper compares the performance of three artificial intelligence models - XGBoost, MLP, and LSTM - in predicting the daily solar power capacity factor in Taiwan.
+There is therefore an urgent need to develop reliable prediction models to facilitate successful solar power deployment. This paper compares the performance of three artificial intelligence models - XGBoost, MLP, and LSTM - in predicting the daily solar power capacity factor in Taiwan."
 
 ## Triple table result:
 [（entity1, relation, entity2）]:  
