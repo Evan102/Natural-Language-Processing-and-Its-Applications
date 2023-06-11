@@ -23,4 +23,4 @@ There is therefore an urgent need to develop reliable prediction models to facil
 ('LSTM', 'predicts', 'daily solar power capacity factor in Taiwan')]
 
 ## Knowledge graph:
-knowledge graph by r10521609.png
+<img src="https://github.com/Evan102/Natural-Language-Processing-and-Its-Applications/blob/main/Create%20a%20Knowledge%20Graph%20by%20LLM/solar%20energy%20knowledge%20graph.png"  width="100%" height="60%">
